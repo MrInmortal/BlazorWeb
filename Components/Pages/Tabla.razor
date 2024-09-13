@@ -1,0 +1,38 @@
+﻿@page "/tabla"
+@rendermode InteractiveServer
+
+<PageTitle>Tabla de Multiplicar</PageTitle>
+
+<h1>Tabla de Multiplicar</h1>
+
+<p>En esta seccion encontraras una Tabla de Multiplicar</p>
+
+<div class="mb-3">
+    <label>Numero:</label>
+    <input type="number" @bind="numero" class="form-control w-25" />
+</div>
+
+@if (numero > 0)
+{
+    <table class="table w-50">
+        <thead>
+            <tr>
+                <th>Multiplicación</th>
+                <th>Resultado</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i <= 10; i++)
+            {
+                <tr>
+                    <td>@numero x @i</td>
+                    <td>@(i * numero)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    int numero = 0;
+}

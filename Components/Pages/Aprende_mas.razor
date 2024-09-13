@@ -1,0 +1,73 @@
+﻿@page "/aprende_mas"
+
+<PageTitle>Aprende más</PageTitle>
+
+<h1>Aprende más</h1>
+
+<p>En esta sección encontrarás videos relacionados con Blazor y una breve descripción del cada uno</p>
+
+<style>
+    .contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem; /* Espaciado entre las cartas */
+    }
+
+    .card {
+        margin: 1rem;
+    }
+
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+</style>
+
+<div class="contenedor"
+    <div class="card" style="width: 18rem;">
+        <img src="https://www.syncfusion.com/blogs/wp-content/uploads/2021/02/Blazor-WebAssembly-An-Overview.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">¿Qué es Blazor?</h5>
+            <p class="card-text">Demostración práctica que muestra como hacer una aplicación Blazor básica.</p>
+            <a href="https://www.youtube.com/watch?v=qckkEiTUvtM&list=PLZyYSwe8s1lx21k4DIDlXL2NNWh4W0TYa&index=2" class="btn btn-primary">Ver video</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="https://www.syncfusion.com/blogs/wp-content/uploads/2021/02/Blazor-WebAssembly-An-Overview.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Blazor WebAssembly vs Blazor Server en 2 minutos</h5>
+            <p class="card-text">Muy buena comparación en 2 simples minutos.</p>
+            <a href="https://www.youtube.com/watch?v=aKYLx-YOPAg&ab_channel=FelipeGavilanPrograma" class="btn btn-primary">Ver video</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="https://www.syncfusion.com/blogs/wp-content/uploads/2021/02/Blazor-WebAssembly-An-Overview.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Cómo leer un archivo Excel con Blazor</h5>
+            <p class="card-text">Simples pasos para leer un archivo Excel en Blazor.</p>
+            <a href="https://www.youtube.com/watch?v=W9sK4nbsSPI&ab_channel=Ing.DagobertoS%C3%A1nchez" class="btn btn-primary">Ver video</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="https://www.syncfusion.com/blogs/wp-content/uploads/2021/02/Blazor-WebAssembly-An-Overview.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Simple Search Filter</h5>
+            <p class="card-text">Una simple barra de búsqueda creada por un usuario usando Blazor.</p>
+            <a href="https://www.youtube.com/watch?v=iZbD4rBnJPo&ab_channel=BenjaminElser" class="btn btn-primary">Ver video</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="https://www.syncfusion.com/blogs/wp-content/uploads/2021/02/Blazor-WebAssembly-An-Overview.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Estructura de una plantilla Blazor</h5>
+            <p class="card-text">Estructura de una plantilla, explica los directorios y archivos al crear un proyecto.</p>
+            <a href="https://www.youtube.com/watch?v=sX5W68oerqQ&list=PLZyYSwe8s1lx21k4DIDlXL2NNWh4W0TYa&index=8&ab_channel=ElCaminoDev#" class="btn btn-primary">Ver video</a>
+        </div>
+    </div>
+</div>
